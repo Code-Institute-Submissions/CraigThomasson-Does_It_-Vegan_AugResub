@@ -28,6 +28,7 @@ class ReviewAdmin(SummernoteModelAdmin):
     search_fields = ['title', 'body', 'restaurant']
     summernote_fields = ('body')
 
+
 @admin.register(Dish)
 class DishAdmin(SummernoteModelAdmin):
     """
