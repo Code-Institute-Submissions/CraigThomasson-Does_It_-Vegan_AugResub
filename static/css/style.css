@@ -23,8 +23,7 @@ body {
 
 #content-wrap {
     padding-bottom: 2.5rem;    /* Footer height */
-  }
-
+}
 
 /* ....................................cards */
 
@@ -82,6 +81,6 @@ footer p {
 
 /* ----------------------------------------manage users */
 
-.overlay {
+.overlay-white {
     background-color: rgba(217,200,191,0.9);
 }
