@@ -54,8 +54,7 @@ body {
     height: auto;
     width: 70vw;
     margin: auto auto;
-    object-fit: fit;
-    position: center center;
+    position: center;
 }
 
 .hero-card {
