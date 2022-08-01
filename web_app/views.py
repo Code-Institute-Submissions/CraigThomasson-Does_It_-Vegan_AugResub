@@ -124,7 +124,7 @@ class AddReviewView(SuccessMessageMixin, CreateView):
     model = Review
     form_class = ReviewForm
     template_name = 'add_review.html'
-    success_message = "Review successfully added!"
+    success_message = "Review successfully added and is awaiting aproval!"
 
     def form_valid(self, form):
         form.instance.restaurant = Restaurant.objects.get(pk=self.kwargs['pk'])

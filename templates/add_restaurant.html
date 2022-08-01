@@ -4,7 +4,8 @@
 <h2>Add new Restaurant</h2>
 <form method="post">
     {% csrf_token %}{{form|crispy}}
-    <a href="{% url 'home' %}"><button type="submit" class="btn btn-primary">Add</button></a>
+    <div>
+        <button vlass="btn btn-submit" type="submit">Add Restaurant</button>
+    </div>
 </form>
-
 {% endblock %}

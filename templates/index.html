@@ -23,10 +23,12 @@
                 <input type="submit" class="btn btn-primary">
             </form>
             {% if user.is_authenticated %}
-                <span><a href="{% url 'add_restaurant' %}"><button type="button" class="btn btn-primary">Add Restaurant</button></a></span>
+                <div><a class="btn btn-primary" href="{% url 'add_restaurant' %}">Add Restaurant</a></div>
             {% else %}
             <p>loggin to add restaurant</p>
-            <span><a href="{% url 'login' %}" class="btn"><button type="button" class="btn btn-primary">login</button></a></span>
+            <div>
+                <a href="{% url 'login' %}" class="btn btn-primary">Login</a>
+            </div>
             {% endif %}
         </div>
     </div>

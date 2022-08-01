@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-{% if user == dish.posted_by %}
+{% if user == review.posted_by %}
     <h2>Edit review</h2>
     <form method="post">
         {% csrf_token %}{{form|crispy}}
