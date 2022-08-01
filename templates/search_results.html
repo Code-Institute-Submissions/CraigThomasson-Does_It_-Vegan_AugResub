@@ -23,7 +23,9 @@
                         <p>Description: {{restaurant.description|striptags}}</p>
                         <p>Town/city: {{restaurant.townCity|striptags}}</p>
                         <p>Adress: {{restaurant.adress|striptags}}</p>
-                        <a href="{% url 'restaurant_detail' restaurant.pk %}"><button type="button" class="btn btn-primary">view</button></a>
+                        <div>
+                            <a href="{% url 'restaurant_detail' restaurant.pk %}" class="btn btn-primary">view</a>
+                        </div>
                     </div>
                 </div>
             {% endfor %}
