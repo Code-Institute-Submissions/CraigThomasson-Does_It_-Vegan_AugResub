@@ -50,7 +50,7 @@
 
         <!-- if the user is logged in the add dish button is displayed if not the logg in to add dish/ review message is displayed -->
         {% if request.user.is_authenticated %}
-            <a href="{% url 'add_dish' restaurant.pk %}" class="btn btn-primary">Add dish</a>
+            <span><a href="{% url 'add_dish' restaurant.pk %}" class="btn btn-primary">Add dish</a></span>
         {% else %}
             <p>login in to add a dish or review <a class="btn btn-primary" href="{% url 'login' %}">login!</a></p>
         {%endif%}
@@ -70,8 +70,8 @@
                     <p>body: {{review.body|striptags}}</p>
                     {% if user.id == review.posted_by.id %}
                         <div class="container">
-                            <span><a href="{% url 'edit_review' review.pk %}" class="btn btn-primary col">Edit Review</a></span>
-                            <span><a href="{% url 'review_confirm_delete' review.pk %}" class="btn btn-danger col">Delete</a></span>
+                            <a href="{% url 'edit_review' review.pk %}" class="btn btn-primary col">Edit Review</a>
+                            <a href="{% url 'review_confirm_delete' review.pk %}" class="btn btn-danger col">Delete</a>
                         </div>
                     {% endif %}
                 </div>
@@ -79,7 +79,7 @@
         {% endif %}
     {% endfor %}
     {% if user.is_authenticated %}
-    <a href="{% url 'add_review' restaurant.pk %}" class="btn btn-primary">add review</a>
+    <span><a href="{% url 'add_review' restaurant.pk %}" class="btn btn-primary mt-1">Add Review</a></span>
     {% else %}
     <p>login in to add a dish or review <a class="btn btn-primary mt-1" href="{% url 'login' %}">login!</a></p>
     {%endif%}
