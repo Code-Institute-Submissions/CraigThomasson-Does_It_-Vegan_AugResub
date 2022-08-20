@@ -242,11 +242,17 @@ Click [here](https://does-it-vegan.herokuapp.com/) to view the live web site
 * JS was ran through JSHint with [these](documentation/images/js-val.PNG) results. (There were also several missing semicolons that I added befre taking this screenshot.)
 
 ## Lighthouse Scores
-
-<img src="documentation/images/lighthouse-2.PNG" width="450" height="auto" alt="image of lighthouse results">
-
-* These are results from my second run. In my first run I had to add margins to difficulty buttons for mobile sizes and meta description in the head of the HTML.
-* I also changed a h3 element to h2 to help with accessibility. 
+* [home page](documentation/images/testing/lh-home.PNG)
+* [add dish](documentation/images/testing/lh-add-dish.PNG)
+* [add restaurant](documentation/images/testing/lh-add-restaurant.PNG)
+* [add review](documentation/images/testing/lh-add-review.PNG)
+* [edit review](documentation/images/testing/lh-edit-review.PNG)
+* [add dish](documentation/images/testing/lh-add-dish.PNG)
+* [edit dish](documentation/images/testing/lh-edit-dish.PNG)
+* [manage reviews](documentation/images/testing/lh-manage-reviews.PNG)
+* [manage users](documentation/images/testing/lh-manage-users.PNG)
+* [search results](documentation/images/testing/lh-search-results.PNG)
+* [site admin](documentation/images/testing/lh-site-admin.PNG)
 
 ## Technologies used
 HTML, CSS, JavaScript and summernote
