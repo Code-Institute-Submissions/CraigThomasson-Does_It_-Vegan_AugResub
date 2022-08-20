@@ -1,28 +1,8 @@
-tech
-- summernote 
-
-images-
-usplash
-restaraunt-image-1 https://unsplash.com/photos/GXXYkSwndP4 
-chipy - https://unsplash.com/photos/YOW3de4wEDk
-go vegan - https://unsplash.com/photos/FoVrVBxEefU
-favicon - https://pixabay.com/vectors/avocado-slice-heal-fresh-green-5130214/
-
-acknolegemnts
-dave and dasiy mentor - deployment
-Daniel_C_5p - advise on testing
-
-note remove development in config vars bfore submitting project.
-
-tech
-https://favicon.io/favicon-converter/
-google fonts https://fonts.google.com
-
 # Does it Vegan
-Click [here](#) to view the live web site 
+Click [here](https://does-it-vegan.herokuapp.com/) to view the live web site 
 
 ### responsive design 
-![Am I responsive](documentation/images/am-I-responsive.PNG)
+![Am I responsive](documentation/images/pages/responsive.PNG)
 <hr>
 
 ## UX
@@ -31,7 +11,7 @@ Click [here](#) to view the live web site
 <br>
 
 ## Goals
-* Create a web site that help people fins restaurant that have vegan dishes in there area
+* Create a web site that help people find restaurants that have vegan dishes in their area
 * Have a web site that has a simple search function for users
 * Users can post reviews of restaurant   
 * users can add restraunts and dishes
@@ -49,67 +29,196 @@ Click [here](#) to view the live web site
 * used kanban board in github projects to work in an agile manner.  <a href='https://github.com/CraigThomasson/Does_It_-Vegan/projects/1'>view</a>
 
 #### user stories 
-* user stories can be vied on kanban board here.
+* user stories can be viewd on kanban board [here](https://github.com/CraigThomasson/Does_It_-Vegan/projects/1).
 
 ## Wireframe for Original Concept
 
-<img src="documentation/images/wireframes.PNG" width="450" height="300" alt="wire frame of load page">
+<img src="documentation/images/wireframes.PNG" width="450" height="300" alt="wire frame image">
 
 ## data base schema
 
-<img src="documentation/images/db.PNG" width="450" height="300" alt="wire frame of load page">
+<img src="documentation/images/db.PNG" width="450" height="300">
 
 <br>
 
 ## Functionality
-## Load Screen
+## home page
 
-<img src="#" width="450" height="250" alt="image of lode page">
+<img src="documentation/images/pages/home_page.PNG" width="450" height="250">
 
 * On the load screen the user will see the title and hero image and see clearly the intentions the page. There are instructed to search for a town or city. The  colour scheme is a nice vegan green. 
 * The user will see the instructions for how to begin search for a location or can add there own restaurant.
- 
+### Testing
+* all links and butons where tested on this page
+* page displayed correctly to authenticated users and gest users.
 
 ## search results
 
-<img src="documentation/images/#" width="450" height="250" alt="image of question and answer box">
+<img src="documentation/images/pages/search-results-guest.PNG" width="450" height="250">
 
 
 * If the user search is successful they will see the results on this page
 * A user can read a brief description of each restaurant returned 
 * A user can click on the view button to view a restaurant
+### Testing
+* all links and butons where tested on this page
+* page displayed correctly to authenticated users and guest users.
  
 
 ## restaurant details
 
-<img src="documentation/images/#" width="450" height="250" alt="image of response box">
+<img src="documentation/images/pages/restraunt-details-guest.PNG" width="450" height="250">
 
-* Once the user selects an answer they will see a correct or incorrect answer box.
-* The correct answer box confirms the answer is correct and displays a button to move to the next question.
-* The incorrect answer box tells the user the answer was wrong and also displays the correct answer. There is also a button to move on to the next question. 
-* Once a question is answered the user will also see the question counter move up as well as the correct and incorrect answer counters. This helps the user keep track of their progress. 
+* page displays restaurant details
+* gest user can see dishes and reviews
+* logged in users can add dishes and reviews and edit there own.
+* buttons will be render for logged in users, as can be seen [here](documentation/images/pages/restraunt-details-user.PNG)
+### Testing
+* all links and butons where tested on this page
+* page displayed correctly to authenticated users and guest users.
+* edit and delete buttons displayed only to users who created the reviews/dishes
 
-## endquiz box
+## add restaurant
 
-<img src="documentation/images/end-quiz.PNG" width="450" height="250" alt="image of end-quiz box">
+<img src="documentation/images/pages/add-restaurant-page.PNG" width="450" height="250" >
 
-* When the user has answered 5 questions the quiz will end and a box will be displayed informing the user of this.
-* The box contains a message with text inspired by a popular phrase in the book series, this should help the user stay immersed in the theme of the quiz. 
-* The user's score is also displayed.
-* There is a button to return the user to the load page. This button also contains text thematically in line with the book series. 
+* This page generates a form logged in users can user to add a restaurant.
+* when a restaurant is add they geta message saying they where successfull
+### Testing
+* all links and butons where tested on this page
+* page displayed correctly to authenticated users and guest users.
+* data was stored to db correctly
+* success message diplayed correctly.
 
-## Footer
+## add dish
 
-* The Footer is styled to match the header and to close off the page in an aesthetically pleasing way.
-* It contains links to my Github, Linkedin and also copyright info.
+<img src="documentation/images/pages/add-dish-page.PNG" width="450" height="250">
+
+* the user can use the from on this page to add a dish to a restaurant.
+* a message is displayed when they are successfull
+### Testing
+* all links and butons where tested on this page
+* page displayed correctly to authenticated users and guest users.
+* data was stored to db correctly
+* success message diplayed correctly.
+
+## edit dish
+
+<img src="documentation/images/pages/edit-dish-page.PNG" width="450" height="250">
+
+* the user can use the from on this page to edit a dish.
+* a message is displayed when they are successfull
+### Testing
+* all links and butons where tested on this page
+* page displayed correctly to authenticated users and guest users.
+* forms where prfilled with correct data from DB
+* data was stored to db correctly
+* success message diplayed correctly.
+
+## add review
+
+<img src="documentation/images/pages/add-review-page.PNG" width="450" height="250">
+
+* the user can use the from on this page to add a review.
+* a message is displayed when they are successfull and an admin will review their post
+### Testing
+* all links and butons where tested on this page
+* page displayed correctly to authenticated users and guest users.
+* data was stored to db correctly
+* success message diplayed correctly.
+
+## edit review
+
+<img src="documentation/images/pages/edit-review-page.PNG" width="450" height="250">
+
+* the user can use the from on this page to eddit a review.
+* the form is prepopulated with the current review data
+* a message is displayed when they are successfull
+### Testing
+* all links and butons where tested on this page
+* page displayed correctly to authenticated users and guest users.
+* data was stored to db correctly
+* success message diplayed correctly.
+
+## site admin
+
+<img src="documentation/images/pages/site-admin-page.PNG" width="450" height="250">
+
+* users in the site admin group can access this page
+* from this page they can navigate to the manage user page and the manage reviews page
+### Testing
+* all links and butons where tested on this page
+* page displayed correctly to authenticated users and guest users.
+
+## manage user
+
+<img src="documentation/images/pages/manage-user-page.PNG" width="450" height="250">
+
+* site admin can see a list of user on this page and delete users.
+### Testing
+* all links and butons where tested on this page
+* page displayed correctly to authenticated users and guest users.
+* data was stored to db correctly
+
+
+## manage review
+
+<img src="documentation/images/pages/manage-review-page.PNG" width="450" height="250">
+
+* site admin can see a list of reviews awaiting aproval on this page.
+* site admin can aprove reviews on this page.
+### Testing
+* all links and butons where tested on this page
+* page displayed correctly to authenticated users and guest users.
+* reviews diplayed when aproved
+
+## nav bar
+
+<img src="documentation/images/features/nav-bar-admin.PNG" width="500" height="auto">
+<br>
+<img src="documentation/images/features/nav-bar-guest.PNG" width="500" height="auto">
+<br>
+
+* site admin can see a link for the admin page when logged in.
+* logged in users can see they are logged in on unsder what username.
+* guest user can only see basic options on the nave bar. 
+* the log out button is renderd when a user logges in. 
+### Testing
+* all links and butons where tested
+* displayed correctly to authenticated users and guest users.
+
+
+## search bar
+
+<img src="documentation/images/features/search-bar-user.PNG" width="500" height="auto">
+<br>
+<img src="documentation/images/features/search-bar.PNG" width="500" height="auto">
+<br>
+
+* guest users and see the search bar on the home page and a link to logg in if they want to add users
+* logged in user see the add restaurant link under the saaerch bar
 
 ## Deployment
 
-This project was deployed to Github pages.
-* In your repository on Github click settings
-* Click the pages tab
-* On the drop-down menu under source, select your main branch
-* Click save
+### Forking the GitHub Repository
+
+* Access your GitHub account and find the relevant repository.
+* Click on 'Fork' on the top right of the page.
+* You will find a copy of the repository in your own Github account.
+* Making a Local Clone
+* Access your GitHub account and find the correct repository.
+* Click the 'Code' button next to 'Add file'.
+
+### Heroku
+
+* Create an account at heroku.com
+* Create a new app, add app name and your region
+* Click on create app
+* Go to "Settings"
+* Under Config Vars, add your sensitive data
+* Go to "Deploy" and at "Deployment method", click on "Connect to Github"
+* Enter your repository name and click on it when it shows below
+* Choose the branch you want to buid your app from
 
 ### Clone to Run Locally
 * In the repository on Github click the Code drop-down button next to the green Gitpod button
@@ -117,20 +226,14 @@ This project was deployed to Github pages.
 
 
 ### Fork the Repo
-* On GitHub, navigate to the repository you want to fork
+* On GitHub navigate to the repository you want to fork
 * In the top right corner of the page, click Fork
 
 ## Testing
 
-* The site was tested in [google chrome](documentation/images/load-page.PNG), [Firefox](documentation/images/firefox.PNG), [Microsoft edge](documentation/images/edge.PNG) and [safari](documentation/images/safari.PNG).
+* The site was tested in [google chrome](documentation/images/load-page.PNG), [Firefox](documentation/images/firefox.PNG), [Microsoft edge](documentation/images/edge.PNG)
 * It was also tested on [android](documentation/images/android.jpg) and [IOS](documentation/images/ios-2.jpg) phones.
-* Text in buttons on IOS was showing as blue originally. To fix I specified button colour in CSS.
 * As evidenced above I also tested on multiple view ports.
-* Links in footer were all tested to ensure they link to the correct pages.
-* The quiz was also play tested by members of a Wheel of Time fan group on Facebook. [playtest-1](documentation/images/playtest-1.PNG) [playtest-2](documentation/images/playtest-2.PNG) [playtest-3](documentation/images/playtest-3.PNG) [playtest-4](documentation/images/playtest-4.PNG)
-* 1 bug in the code was found in the play test that caused an extra question to be displayed when the quiz ends. To fix this I simply hid the question box in the end game function.
-* Several spelling/grammar issues were also found and fixed.
-* The feedback for the usability and play ability of the quiz was overwhelmingly positive. The group enjoyed the language inspired by the book and found the quiz somewhat challenging on the harder level.
 
 ## Validation
 
@@ -146,46 +249,26 @@ This project was deployed to Github pages.
 * I also changed a h3 element to h2 to help with accessibility. 
 
 ## Technologies used
-HTML, CSS and JavaScript.
-https://www.favicon.cc/ for favicon.
+HTML, CSS, JavaScript and summernote
+https://favicon.io/favicon-converter/
+google fonts https://fonts.google.com
+
+## images
+usplash
+restaraunt-image-1 https://unsplash.com/photos/GXXYkSwndP4 
+chipy - https://unsplash.com/photos/YOW3de4wEDk
+go vegan - https://unsplash.com/photos/FoVrVBxEefU
+favicon - https://pixabay.com/vectors/avocado-slice-heal-fresh-green-5130214/
+
 
 ## credits 
 
 ### Sources and References
 * Google fonts were used in this project: https://fonts.google.com/
 * Font Awesome was used in the footer: www.fontawesome.com
-* Images:
-    https://www.pexels.com/photo/man-holding-sword-3408420/
-    https://pixabay.com/photos/corridor-architecture-ruins-6572354/
-    https://pixabay.com/photos/smoke-backdrop-macro-creative-4988505/
-    https://pixabay.com/photos/notes-book-game-play-books-art-2656005/ 
-    https://pixabay.com/photos/blacksmith-pincers-tools-smithy-2703384/
-    https://pixabay.com/photos/forest-mist-nature-trees-mystic-931706/
-    https://www.yahoo.com/lifestyle/wheel-time-aes-sedai-explained-154407640.html
-    https://dragonmount.com/gallery/image/1702-ogier/
-    https://www.tor.com/2020/04/23/why-cant-anyone-see-mat-cauthon-changing/
-    https://pixabay.com/photos/zanzibar-stone-town-tanzania-africa-4271064/
-    https://pixabay.com/photos/wolves-wolf-howling-moon-stars-1400819/
-    https://www.instagram.com/p/BjGiL5MHLeL/
-    https://pixabay.com/illustrations/crystal-ball-glass-sphere-bullet-4043805/
-    https://www.pexels.com/photo/person-holding-brown-wooden-tray-with-cookies-6014303/
-    https://www.pexels.com/photo/selective-focus-photography-of-child-s-hand-1250452/
-    https://unsplash.com/photos/wfVREQs7KXQ
-    https://pixabay.com/photos/bar-pub-comfortable-the-atmosphere-3407484/
-    https://pixabay.com/photos/horse-soldier-warrior-war-battle-4596827/
-    https://otakukart.com/561823/amazons-epic-the-wheel-of-time-is-finally-set-for-a-2021-release/
-
+  
 ## acknowledgements
 
 * I would like to thank my mentor Chriss Quinn again for pushing me to produce my best work and being the best mentor that ever mentored.
-* Thank you to everyone in the Wheel of Time <a href="https://www.facebook.com/groups/2251256361856379">fan group</a> for all of their great feedback.
-* Thanks to Matt Bodden 5p for helping me fix an issue with file paths for my images.
-* Thanks to David Bowers_5p and Eventyret_mentor for helping with favicons.
-
-
-### source
-* Code institute love sandwich project code was used as base for my event listeners (line 3 - line 15 in script.js).
-
-* Sean young_lead from CI slack community pointed me to the fisher-yates shuffle to help me with issues with my random question generator.  
-
-* Used code from love maths project to increment scores.
+* dave and dasiy mentor - for helping with deployment
+* Daniel_C_5p - advise on testing
