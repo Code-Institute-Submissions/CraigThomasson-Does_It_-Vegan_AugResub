@@ -254,6 +254,19 @@ Click [here](https://does-it-vegan.herokuapp.com/) to view the live web site
 * [search results](documentation/images/testing/lh-search-results.PNG)
 * [site admin](documentation/images/testing/lh-site-admin.PNG)
 
+## HTML validation Scores
+* [home page](documentation/images/testing/html-valid-home.PNG)
+* [add dish](documentation/images/testing/html-valid-add-dish.PNG)
+* [add restaurant](documentation/images/testing/html-valid-add-restaurant.PNG)
+* [add review](documentation/images/testing/html-valid-add-review.PNG)
+* [edit review](documentation/images/testing/html-valid-edit-review.PNG)
+* [add dish](documentation/images/testing/html-valid-add-dish.PNG)
+* [edit dish](documentation/images/testing/html-valid-edit-dish.PNG)
+* [manage reviews](documentation/images/testing/html-valid-manage-reviews.PNG)
+* [manage users](documentation/images/testing/html-valid-manage-users.PNG)
+* [search results](documentation/images/testing/html-valid-search-results.PNG)
+* [site admin](documentation/images/testing/html-valid-site-admin.PNG)
+
 ## Technologies used
 HTML, CSS, JavaScript and summernote
 https://favicon.io/favicon-converter/
