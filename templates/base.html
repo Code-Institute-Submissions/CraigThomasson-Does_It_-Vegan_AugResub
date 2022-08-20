@@ -43,9 +43,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'logout' %}">log out</a>
                   </li>
-                  <span class="navbar-text">
+                  <li class="navbar-text text-dark">
                     <i class="fa-regular fa-user"></i> {{user.username}}
-                  </span>
+                  </li>
                 {% else %}
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'login' %}">login</a>
