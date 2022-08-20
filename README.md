@@ -231,15 +231,13 @@ Click [here](https://does-it-vegan.herokuapp.com/) to view the live web site
 
 ## Testing
 
-* The site was tested in [google chrome](documentation/images/load-page.PNG), [Firefox](documentation/images/firefox.PNG), [Microsoft edge](documentation/images/edge.PNG)
-* It was also tested on [android](documentation/images/android.jpg) and [IOS](documentation/images/ios-2.jpg) phones.
-* As evidenced above I also tested on multiple view ports.
+* as well as manual testing above automated test where writen in test_views.py
 
 ## Validation
 
-* CSS was ran through (Jigsaw) validator and has no errors: results [here](documentation/images/css-val.PNG)
-* HTML was ran through W3C validator with no issues: results <a href="http://validator.w3.org/check?uri=https://craigthomasson.github.io/project-2-wheel-of-time-quiz/">here</a>
-* JS was ran through JSHint with [these](documentation/images/js-val.PNG) results. (There were also several missing semicolons that I added befre taking this screenshot.)
+* CSS was ran through (Jigsaw) validator and has no errors
+* HTML was ran through W3C validator with no issues
+* python was ran through pep8 online
 
 ## Lighthouse Scores
 * [home page](documentation/images/testing/lh-home.PNG)
@@ -267,10 +265,25 @@ Click [here](https://does-it-vegan.herokuapp.com/) to view the live web site
 * [search results](documentation/images/testing/html-valid-search-results.PNG)
 * [site admin](documentation/images/testing/html-valid-site-admin.PNG)
 
+## css validation
+* [css](documentation/images/testing/css-valid.PNG)
+
+## pep8 validation
+* [admin](documentation/images/testing/pep8-admin.PNG)
+* [forms](documentation/images/testing/pep8-forms.PNG)
+* [models](documentation/images/testing/pep8-models.PNG)
+* [tests](documentation/images/testing/pep8-tests.PNG)
+* [urls](documentation/images/testing/pep8-urls.PNG)
+* [views](documentation/images/testing/pep8-views.PNG)
+
+
 ## Technologies used
 HTML, CSS, JavaScript and summernote
 https://favicon.io/favicon-converter/
 google fonts https://fonts.google.com
+http://pep8online.com/
+https://validator.w3.org/
+https://jigsaw.w3.org/css-validator/
 
 ## images
 usplash
